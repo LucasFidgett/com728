@@ -1,3 +1,4 @@
+#Get user input
 userLook = input("Where should I look?\n")
 
 if userLook == "in the bedroom":
