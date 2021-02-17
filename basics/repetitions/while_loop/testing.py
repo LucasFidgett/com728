@@ -1,13 +1,12 @@
-print("How many live cables must I avoid?")
-live_cables = int(input())
+# Ask user for brightness level
+print("What level of brightness is required?")
+brightness_desired = int(input())
 
-cables_avoided = 0
+# Adjust brightness
+print("\nAdjusting brightness...\n")
 
-print()
+for brightness in range(2, brightness_desired + 1, 2):
+    print(f"Beep's brightness level: {'*' * brightness}")
+    print(f"Bop's brightness level: {'*' * brightness}")
 
-while cables_avoided < live_cables:
-    print("Avoiding...", end="")
-    cables_avoided = cables_avoided + 1
-    print(f"...Done {cables_avoided} live cables avoided")
-
-print("All live cables have been avoided")
+print("Adjustments complete!")
